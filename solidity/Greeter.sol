@@ -1,11 +1,11 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.9;
 
-contract Greeter {
+contract VXGreeterRANDSUBNAME {
     string private greeting;
 
-    constructor(string memory _greeting) {
-        greeting = _greeting;
+    constructor() {
+        greeting = RANDSTRING;
     }
 
     function greet() public view returns (string memory) {

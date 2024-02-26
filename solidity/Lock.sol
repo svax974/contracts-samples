@@ -4,15 +4,15 @@ pragma solidity ^0.8.9;
 // Uncomment this line to use console.log
 // import "hardhat/console.sol";
 
-contract Lock {
+contract VXLockRANDSUBNAME {
     uint public unlockTime;
     address payable public owner;
 
     event Withdrawal(uint amount, uint when);
 
-    constructor(uint _unlockTime) payable {
+    constructor() payable {
         require(
-            block.timestamp < _unlockTime,
+            block.timestamp < RANDTIME,
             "Unlock time should be in the future"
         );
 
